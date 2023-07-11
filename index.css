@@ -22,6 +22,7 @@ html{
     font-size: 18px;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .logo{
@@ -118,6 +119,7 @@ html{
     background-color:var(--tema);
     color:#fff;
     box-shadow:0 0 10px #fff ;
+    padding-top: 70px;
 }
 
 .sobreMi-container h1{
@@ -185,6 +187,7 @@ html{
     margin:0 10px 10px 10px;
     border:solid #fff;
     transition-duration: 0.5s;
+    border-radius: 10px;
 }
 
 .icon-interes:hover{
@@ -196,6 +199,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .download{
@@ -218,3 +222,293 @@ html{
     margin:0
 }
 
+.skills-container{
+    background-image:linear-gradient(to top,rgba(3, 40, 62, 0.8),rgba(14, 21, 26, 0.8)), url("galeria/circuito.svg");
+    box-shadow: 0 0 10px #064268;
+    padding-top: 78px;
+}
+
+.titulo-skills{
+    text-align: center;
+    color:#fff;
+    font-size: 40px;
+}
+
+.titulo-skills h2{
+    margin:0;
+}
+
+.skills-grid-container{
+    display: grid;
+    grid-template-areas:
+    "tituloTechnicalSkills tituloProffesionalSkills"
+    "technical proffesional";
+    grid-template-columns: 1fr 1fr;
+    color:#fff;
+    padding:20px 0px 60px 100px;
+}
+
+.titulo-technicalSkills{
+    grid-area: tituloTechnicalSkills;
+    text-align: center;
+    font-size: 26px;
+}
+
+.titulo-technicalSkills h2{
+    border-bottom:solid var(--celeste);
+    display: inline-block;
+    width: 50%;
+}
+
+.technical{
+    grid-area: technical;
+    padding: 30px;
+}
+
+.technical h3{
+    margin: 0 30px 0 0 ;
+}
+
+.skills-section{
+    display: flex;
+    padding:10px;
+}
+
+.star{
+    padding: 0 2px ;
+    width: 20px;
+    height: 20px;
+    color:var(--celeste);
+}
+
+.titulo-proffesionalSkills{
+    text-align: center;
+    grid-area: tituloProffesionalSkills;
+    font-size: 26px;
+}
+
+.titulo-proffesionalSkills h2{
+    border-bottom:solid var(--celeste);
+    display: inline-block;
+    width: 50%;
+}
+
+.proffesional{
+    grid-area: proffesional;
+    padding: 30px;
+}
+
+.proffesional h3{
+    margin:0 30px 0 0;
+}
+
+.curriculum-container{
+    background-color: var(--tema);
+    color:#fff;
+}
+
+.curriculum-container h2{
+    margin:0
+}
+
+.titleCurriculum{
+    text-align: center;
+    padding-top: 78px;
+    font-size: 30px;
+}
+
+.curriculum-item{
+    display: grid;
+    grid-template-areas: 
+    "titleEducation titleWorkExperience"
+    "education workExperience";
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 130px;
+}
+
+b{
+    color:var(--celeste)
+}
+
+.title-education{
+    grid-area: titleEducation;
+    text-align: center;
+}
+
+.title-workExperience{
+    grid-area: titleWorkExperience;
+    text-align: center;
+}
+
+.education{
+    grid-area:education;
+    padding: 20px;
+    margin:20px;
+    box-shadow: 0 0 10px var(--celeste);
+    border-radius: 20px;
+}
+
+.workExperience{
+    grid-area: workExperience;
+    padding: 20px;
+    margin:20px;
+    box-shadow: 0 0 10px var(--celeste);
+    border-radius: 20px;
+}
+
+.portafolio-container{
+    background-color:#22272d;
+    box-shadow: 0 0 10px #4e4949;
+    padding-top: 78px;
+    color:#fff;
+}
+
+.title-portafolio{
+    text-align:center;
+    font-size: 30px;
+}
+
+.title-portafolio h2{
+    margin:0;
+}
+
+.portafolios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows:repeat(1,350px) ;
+    grid-gap: 40px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.portafolios-items{
+    box-shadow: 0 0 7px var(--celeste);
+    border-radius: 10px;
+    transition-duration:1s;
+}
+
+figure{
+    margin:10px;
+}
+.img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portafolios-description{
+    padding:0 10px 0 10px;
+}
+
+.portafolios-items:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.contacto-container{
+    color:#fff;
+    padding-top: 78px;
+    background-image:linear-gradient(to top,rgba(4, 54, 82, 0.8),rgba(14, 21, 26, 0.8)), url(galeria/mundo.svg);
+    background-repeat: no-repeat;
+}
+
+.title-contacto{
+    text-align: center;
+    font-size:30px;
+}
+
+.form-items{
+    display: grid;
+    grid-template-areas: 
+    "nombre apellido"
+    "mail tema"
+    "mensaje mensaje"
+    "enviar enviar";
+    grid-template-columns:1fr 1fr;
+    padding-bottom: 100px;
+}
+
+input{
+    width: 50%;
+    height: 40px;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #34404f;
+    border: none;
+    transition-duration:1s;
+    color:#fff;
+}
+
+textarea{
+    width: 53%;
+    height: 100px;
+    resize: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #34404f;
+    border:none;
+    transition-duration:1s;
+    color:#fff;
+}
+
+input::placeholder{
+    color:#fff;
+}
+
+
+
+input:focus{
+    background-color:#34404f ;
+    box-shadow: 0 0 30px var(--celeste);
+    border:none;
+}
+
+textarea::placeholder{
+    color:#fff;
+}
+
+textarea:focus{
+    background-color: #363c43;
+    box-shadow: 0 0 30px var(--celeste)
+}
+
+.name{
+    text-align: end;
+    grid-area: nombre;
+}
+
+.lastName{
+    grid-area:apellido
+}
+
+.mail{
+    text-align: end;
+    grid-area:mail ;
+}
+
+.theme{
+    grid-area:tema
+}
+
+.message{
+    text-align: center;
+    grid-area: mensaje;
+}
+
+.send{
+    grid-area: enviar;
+    text-align: center;
+}
+
+.send input{
+    margin-top: 50px;
+    width: 10%;
+    height: 30px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.send input:hover{
+    box-shadow: 0 0 10px var(--celeste);
+    width: 12%;
+}
