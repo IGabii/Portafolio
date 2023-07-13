@@ -3,6 +3,7 @@ body{
     margin:0;
     padding: 0;
     font-family: calibri;
+    background-color: var(--tema);
 }
 
 html{
@@ -13,6 +14,10 @@ html{
     --tema:#1a1e23;
     --celeste:rgba(4, 220, 244, 0.8)
 }
+
+.menu-lateral{
+    display: none;
+}    
 
 .nav-container{
     display: flex;
@@ -55,15 +60,14 @@ html{
     background: linear-gradient(to top,rgba(30, 157, 231, 0.8),rgba(14, 21, 26, 0.8)),url(galeria/fondo.jpg);
     background-size: cover;
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 150px;
 }
 
 .chart{
     border:solid #fff;
     width: 27%;
-    height: 70%;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -118,7 +122,7 @@ html{
 .sobreMi-container{
     background-color:var(--tema);
     color:#fff;
-    box-shadow:0 0 10px #fff ;
+    
     padding-top: 70px;
 }
 
@@ -158,7 +162,7 @@ html{
 }
 
 .datos p{
-    margin:0 40px 0 40px;
+    margin:0 0 0 40px;
 }
 
 .datos b{
@@ -224,6 +228,8 @@ html{
 
 .skills-container{
     background-image:linear-gradient(to top,rgba(3, 40, 62, 0.8),rgba(14, 21, 26, 0.8)), url("galeria/circuito.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 0 10px #064268;
     padding-top: 78px;
 }
@@ -387,6 +393,11 @@ b{
     transition-duration:1s;
 }
 
+.a{
+    text-align:center;
+    font-size: 40px;
+}
+
 figure{
     margin:10px;
 }
@@ -409,6 +420,8 @@ figure{
     padding-top: 78px;
     background-image:linear-gradient(to top,rgba(4, 54, 82, 0.8),rgba(14, 21, 26, 0.8)), url(galeria/mundo.svg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
 }
 
 .title-contacto{
@@ -424,7 +437,7 @@ figure{
     "mensaje mensaje"
     "enviar enviar";
     grid-template-columns:1fr 1fr;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 input{
@@ -502,13 +515,628 @@ textarea:focus{
 
 .send input{
     margin-top: 50px;
-    width: 10%;
-    height: 30px;
+    width: 20%;
+    height: 35px;
     color:#fff;
     cursor: pointer;
 }
 
 .send input:hover{
     box-shadow: 0 0 10px var(--celeste);
-    width: 12%;
+    width: 22%;
 }
+
+@media only screen and (max-width:972px){
+    .chart{
+        height: 67%;
+    }
+}
+
+@media only screen and (max-width:968px){
+    .chart h2{
+        font-size: 30px;
+    }
+
+    .chart h3{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:929px){
+    .a{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:877px){
+    body{
+        font-size: 16px;
+    }
+
+    .nav-container{
+        font-size: 15px;
+    }
+
+    .body-container{
+        padding-top: 64px;
+    }
+
+    .chart{
+        height: 60%;
+    }
+
+    .sobreMi-container p{
+        font-size: 18px;
+    }
+
+    .datos p{
+        font-size: 18px;
+        padding-right: 0;
+    }
+
+    .sobreMi-container h1{
+        font-size: 40px;
+    }
+
+    .titulo-skills{
+        font-size: 30px;
+    }
+
+    .icon-interes{
+        width: 30px;
+        height: 30px;
+    }
+
+    .download{
+        font-size: 14px;
+    }
+
+    .titulo-skills{
+        font-size: 30px;
+    }
+
+    .titulo-technicalSkills{
+        font-size: 20px;
+    }
+
+    .titulo-proffesionalSkills{
+        font-size: 18px;
+    }
+
+    .skills-section{
+        font-size: 16px;
+    }
+
+    .skills-grid-container{
+        padding: 29px 0 60px 50px;
+    }
+
+    .star{
+        width: 15px;
+        height: 15px;
+    }
+
+    .titleCurriculum{
+        font-size: 27px;
+    }
+
+    .title-education {
+        font-size: 15px;
+    }
+
+    .education{
+        font-size: 14px;
+    }
+
+    .title-workExperience{
+        font-size: 15px;
+    }
+
+    .workExperience{
+        font-size:14px
+    }
+
+    .title-portafolio{
+        font-size: 25px;
+    }
+
+    .portafolios-description{
+        font-size: 16px;
+    }
+
+    .portafolios-description p{
+        margin:0
+    }
+
+    .portafolios{
+        grid-template-rows: repeat(1,310px);
+    }
+
+    .title-contacto{
+        font-size: 25px;
+    }
+
+    input{
+        font-size: 15px;
+    }
+
+    textarea{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:826px){
+    .titulo-skills{
+        font-size: 25px;
+    }
+
+    .chart{
+        height: 30%;
+    }
+
+    .body-container{
+        padding-top:60px ;
+    }
+
+    .nav-container a{
+        font-size: 13px;
+    }
+
+    .nav-container{
+        font-size: 14px;
+    }
+
+    .titulo-technicalSkills{
+        font-size: 15px;
+    }
+
+    .titulo-proffesionalSkills{
+        font-size: 15px;
+    }
+
+    .skills-section{
+        font-size: 12px;
+    }
+
+    .star{
+        width: 15px;
+        height: 15px;
+    }
+
+    .portafolios-description{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:762px){
+    .sobreMi-container p{
+        font-size: 16px;
+    }
+
+    .datos p{
+        font-size: 16px;
+    }
+
+    .download{
+        font-size: 12px;
+    }
+
+    .icon-interes{
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+    }
+
+    .titleCurriculum{
+        font-size: 22px;
+    }
+
+    .workExperience{
+        font-size:12px
+    }
+
+    .education{
+        font-size: 12px;
+    }
+
+    .portafolios{
+        padding:20px;
+        grid-gap: 15px;
+    }
+
+    .social-icons{
+        width: 20px;
+        height: 20px;
+    }
+
+    .curriculum-item{
+        padding: 20px 90px;
+    }
+
+    .chart{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:736px){
+    .chart h2{
+        font-size: 25px;
+    }
+
+    .chart{
+        height:55%;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .skills-grid-container{
+        padding-left:0;
+    }
+
+    .ul-item{
+        padding: 0 10px 0 0;
+    }
+
+    .nav-container a{
+        padding: 10px;
+    }
+
+    input{
+        font-size: 13px;
+    }
+
+    textarea{
+        font-size: 13px;
+    }
+
+    .img-me{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:648px){
+    .datos p{
+        padding-left:10px ;
+    }
+
+    .chart h3{
+        font-size: 13px;
+    }
+
+    .img-me{
+        width: 75%;
+    }
+
+    .chart h2{
+        font-size: 24px;
+    }
+
+    .chart{
+        width: 34%;
+    }
+
+    .curriculum-item{
+        padding:20px 30px ;
+    }
+
+    .technical{
+        padding: 15px;
+    }
+
+    .proffesional{
+        padding: 15px;
+    }
+
+    .a{
+        font-size: 20px;
+    }
+
+    .portafolios-description{
+        font-size: 14px;
+    }
+
+    .nav-container{
+        display: none;
+    }
+
+    .menu-lateral{
+        display: block;
+    }
+/*---------------------------------------------------*/
+    .title--portafolio{
+        font-size:20px;
+        text-align: center;
+        color:var(--celeste);
+    }
+
+    .title--portafolio h1{
+        margin:14px 0 0 0;
+    }
+
+    nav.menu-lateral{
+        width: 100%;
+        height: 20px;
+        background-color:rgba(14, 21, 26, 0.9) ;    
+        padding: 20px 0 20px 4px;
+        position: fixed;
+        top:0;
+        left:0;
+        overflow:hidden;
+        transition: .5s;
+        z-index: 1;
+    }
+    
+    nav.menu-lateral.expandir{
+        height: 500px;
+    }
+    
+    .btn-expandir{
+        width: 100%;
+        padding-left: 10px;
+    }
+    
+    .btn-expandir > i{
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    ul{
+        height: 100%;
+        list-style-type: none;
+        padding: 10px 0 50px 10px;
+    }
+    
+    ul li.item-menu{
+        transition: .2s;
+    }
+    
+    ul li.activo{
+        background-color: var(rgba(4, 220, 244, 0.8));
+    }
+    
+    ul li.item-menu:hover{
+        background-color:var(--celeste);
+    }
+    
+    ul li.item-menu a{
+        color:#fff;
+        text-decoration:none;
+        font-size: 16px;
+        padding: 5px 4%;
+        display: flex;
+        margin-bottom:10px;
+        line-height: 40px;
+    }
+    
+    ul li.item-menu a .txt-link{
+        margin-left: 70px;
+        transition: 1s;
+    }
+    
+    ul li.item-menu a .icon > i{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:625px){
+    .chart{
+        height: 60%;
+    }
+
+    .titulo-proffesionalSkills h2{
+        font-size: 20px ;
+    }
+
+    .titulo-technicalSkills h2{
+        font-size: 20px;
+    }
+
+    .titulo-datos h2{
+        font-size: 22px;
+    }
+
+    .titulo-intereses h2{
+        font-size: 22px;
+    }
+
+    .sobreMi-container H1{
+        font-size: 35px;
+    }
+
+    .title-portafolio{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:587px) {
+    .skills-section{
+        font-size: 10px;
+    }
+
+    .nav-container a{
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .skills-section h3{
+        margin:2px
+    }
+
+    input{
+        font-size: 14px;
+        height:30px;
+        width: 80%;
+    }
+
+    textarea{
+        font-size: 14px;
+        height: 80px;
+        width: 90%;
+    }
+
+    .title-contacto {
+        font-size: 20px;
+    }
+
+    .portafolios{
+        grid-template-rows: repeat(1, 250px);
+        padding-right:5px;
+        padding-left: 5px;
+    }
+
+    .portafolios-description p{
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media only screen and (max-width:537px){
+    .chart{
+        width: 42%;
+    }
+
+    .portafolios{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,290px);
+        padding: 10px;
+    }
+
+    .portafolios-description p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:518px){
+    .curriculum-item{
+        padding: 20px 10px;
+    }
+
+    .education{
+        margin:10px
+    }
+
+    .workExperience{
+        margin:10px
+    }
+
+    .sobreMi-container p{
+        padding: 10px 30px;
+    }
+
+    .datos p{
+        margin:0;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:442px){
+    .title-workExperience{
+        font-size: 14px;
+    }
+
+    .chart{
+        height: 56%;
+    }
+
+    .chart{
+        width: 50%;
+    }
+
+    .icon-interes{
+        padding: 5px;
+        margin:5px
+    }
+}
+
+@media only screen and (max-width:425px){
+    .skills-section{
+        font-size: 8px;
+    }
+
+    .education{
+        font-size: 8px;
+    }
+
+    .workExperience{
+        font-size: 8px;
+    }
+
+    .title-education{
+        font-size: 11px;
+    }
+
+    .title-workExperience{
+        font-size: 10px;
+    }
+
+    .titleCurriculum{
+        font-size: 15px;
+    }
+
+    .titulo-skills{
+        font-size: 15px;
+    }
+
+    .title-portafolio{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .title-contacto{
+        font-size: 15px;
+    }
+
+    .portafolios-description p{
+        font-size: 10px;
+    }
+
+    .portafolios{
+        grid-template-rows: repeat(2,220px);
+    }
+
+    .sobreMi-container p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:396px){
+    .technical{
+        padding: 0;
+    }
+
+    .proffesional{
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width:338px){
+    .skills-grid-container{
+        grid-template-areas: 
+        "tituloTechnicalSkills"
+        "technical"
+        "tituloProffesionalSkills"
+        "proffesional";
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:289px){
+    .titulo-intereses h2{
+        font-size: 20px;
+    }
+
+    .titulo-datos h2{
+        font-size: 20px;
+    }
+
+    .icon-interes{
+        padding: 2px;
+    }
+}
+
+
