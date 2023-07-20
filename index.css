@@ -22,7 +22,7 @@ html{
 .nav-container{
     display: flex;
     justify-content: space-between;
-    background-color:var(--tema);
+    background-color:rgba(6, 11, 15, 0.7);
     align-items: center;
     font-size: 18px;
     position: fixed;
@@ -31,12 +31,30 @@ html{
 }
 
 .logo{
-    color:rgba(4, 220, 244, 0.8)
+    color:rgba(4, 220, 244, 0.8);
+    display: flex;
+}
+
+.banderaInglesa-container{
+    width: 50px;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0
+}
+
+.banderaInglesa {
+    padding:0 20px 0 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .ul-item{
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 .ul-item a{
@@ -57,7 +75,7 @@ html{
 }
 
 .start-container{
-    background: linear-gradient(to top,rgba(30, 157, 231, 0.8),rgba(14, 21, 26, 0.8)),url(galeria/fondo.jpg);
+    background: linear-gradient(to top,rgba(30, 157, 231, 0.7),rgba(14, 21, 26, 0.8)),url(galeria/fondo.jpg);
     background-size: cover;
     width: 100%;
     display: flex;
@@ -107,22 +125,47 @@ html{
 
 .social-icons{
     margin:0;
-    color:#fff;
     width: 30px;
     height: 30px;
     padding: 10px;
     transition-duration:1s;
 }
 
+.linkedin{
+    color:#0e76a8;
+    filter: drop-shadow(0 0 100px #fff)
+}
+
+.instagram{
+    color:#dd2a7b;
+    filter: drop-shadow(0 0 80px #fff)
+}
+
+.github{
+    color:#fff;
+    filter: drop-shadow(0 0 100px #fff)
+}
+
 .social-icons:hover{
     transform: scale(1.2);
-    filter:drop-shadow(0 0 3px #fff)
+}
+
+.linkedin:hover{
+    filter:drop-shadow(0 0 10px #0e76a8)
+}
+
+.instagram:hover{
+    filter:drop-shadow(0 0 10px #dd2a7b);
+}
+
+.github:hover{
+    filter:drop-shadow(0 0 10px #fff)
 }
 
 .sobreMi-container{
-    background-color:var(--tema);
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.7),rgba(14, 21, 26, 0.8)),url(galeria/imagenSobreMi.jpg);
+    background-size: cover;
     color:#fff;
-    
     padding-top: 70px;
 }
 
@@ -131,7 +174,6 @@ html{
     padding: 10px;
     font-size: 50px;
     text-align: center;
-    color: rgba(4, 220, 244, 0.8);
     text-shadow: 0 0 3px #fff;
 }
 
@@ -227,7 +269,7 @@ html{
 }
 
 .skills-container{
-    background-image:linear-gradient(to top,rgba(3, 40, 62, 0.8),rgba(14, 21, 26, 0.8)), url("galeria/circuito.svg");
+    background-image:linear-gradient(to top,rgba(1, 13, 18, 0.5),rgba(14, 21, 26, 0.8)), url("galeria/imagenHabilidades.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px #064268;
@@ -284,7 +326,8 @@ html{
     padding: 0 2px ;
     width: 20px;
     height: 20px;
-    color:var(--celeste);
+    color:#0ddfe6;
+    filter:drop-shadow(0 0 4px #0ddfe6)
 }
 
 .titulo-proffesionalSkills{
@@ -309,8 +352,10 @@ html{
 }
 
 .curriculum-container{
-    background-color: var(--tema);
+    background-image:linear-gradient(to top,rgba(0, 7, 11, 0.7),rgba(14, 21, 26, 0.8)),url(galeria/imagenPortafolio.jpg);
+    background-size: cover;
     color:#fff;
+    box-shadow: 0 0 20px #89949a;
 }
 
 .curriculum-container h2{
@@ -363,7 +408,9 @@ b{
 }
 
 .portafolio-container{
-    background-color:#22272d;
+    background-image:linear-gradient(to top,rgba(1, 13, 18, 0.5),rgba(14, 21, 26, 0.8)), url("galeria/imagena.jpg");
+    background-size: cover;
+    background-position:bottom;
     box-shadow: 0 0 10px #4e4949;
     padding-top: 78px;
     color:#fff;
@@ -381,7 +428,7 @@ b{
 .portafolios{
     display: grid;
     grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows:repeat(1,350px) ;
+    grid-template-rows:repeat(1,360px) ;
     grid-gap: 40px;
     justify-content: center;
     padding: 50px;
@@ -418,10 +465,11 @@ figure{
 .contacto-container{
     color:#fff;
     padding-top: 78px;
-    background-image:linear-gradient(to top,rgba(4, 54, 82, 0.8),rgba(14, 21, 26, 0.8)), url(galeria/mundo.svg);
+    background-image:linear-gradient(to top,rgba(0, 3, 5, 0.3),rgba(14, 21, 26, 0.8)), url(galeria/imagenContacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
+    padding-bottom: 100px;
 }
 
 .title-contacto{
@@ -429,102 +477,74 @@ figure{
     font-size:30px;
 }
 
-.form-items{
-    display: grid;
-    grid-template-areas: 
-    "nombre apellido"
-    "mail tema"
-    "mensaje mensaje"
-    "enviar enviar";
-    grid-template-columns:1fr 1fr;
-    padding-bottom: 30px;
+.contactDetails{
+    display: flex;
+    justify-content: center;
 }
 
-input{
-    width: 50%;
-    height: 40px;
-    margin: 15px;
-    font-size: 18px;
+.contactDetails-container{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.contact-item{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+}
+
+.contact-item h3{
+    margin:0;
+    padding: 0 0 0 140px;
+    font-size: 21px;
+}
+
+.a-contact{
+    display: flex;
+    color:#fff;
+    text-decoration: none;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #42494d;
     border-radius: 10px;
-    background-color: #34404f;
-    border: none;
-    transition-duration:1s;
-    color:#fff;
+    padding: 10px;
+    align-items: center;
+    transition-duration:0.5s;
 }
 
-textarea{
-    width: 53%;
-    height: 100px;
-    resize: none;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: #34404f;
-    border:none;
-    transition-duration:1s;
-    color:#fff;
+.icons-contact{
+    width: 30px;
+    height: 30px;
 }
 
-input::placeholder{
-    color:#fff;
+.contactLinkedin{
+    color:#0e76a8;
+    filter:drop-shadow( 0 0 0.3px #fff)
 }
 
-
-
-input:focus{
-    background-color:#34404f ;
-    box-shadow: 0 0 30px var(--celeste);
-    border:none;
+.contactGmail{
+    color:#00e4f4;
 }
 
-textarea::placeholder{
-    color:#fff;
+.contactWhatsapp{
+    color:#2df30a
 }
 
-textarea:focus{
-    background-color: #363c43;
-    box-shadow: 0 0 30px var(--celeste)
+.aLinkedin:hover{
+    box-shadow: 0 0 10px #0e76a8;
 }
 
-.name{
-    text-align: end;
-    grid-area: nombre;
+.aEmail:hover{
+    box-shadow: 0 0 10px #00e4f4;
 }
 
-.lastName{
-    grid-area:apellido
+.aWhatsapp:hover{
+    box-shadow: 0 0 10px #2df30a;
 }
 
-.mail{
-    text-align: end;
-    grid-area:mail ;
-}
-
-.theme{
-    grid-area:tema
-}
-
-.message{
-    text-align: center;
-    grid-area: mensaje;
-}
-
-.send{
-    grid-area: enviar;
-    text-align: center;
-}
-
-.send input{
-    margin-top: 50px;
-    width: 20%;
-    height: 35px;
-    color:#fff;
-    cursor: pointer;
-}
-
-.send input:hover{
-    box-shadow: 0 0 10px var(--celeste);
-    width: 22%;
-}
 
 @media only screen and (max-width:972px){
     .chart{
@@ -655,13 +675,8 @@ textarea:focus{
     .title-contacto{
         font-size: 25px;
     }
-
-    input{
-        font-size: 15px;
-    }
-
-    textarea{
-        font-size: 15px;
+    .contact-item h3{
+        font-size: 19px;
     }
 }
 
@@ -782,14 +797,6 @@ textarea:focus{
         padding: 10px;
     }
 
-    input{
-        font-size: 13px;
-    }
-
-    textarea{
-        font-size: 13px;
-    }
-
     .img-me{
         width: 70%;
     }
@@ -843,6 +850,11 @@ textarea:focus{
     .menu-lateral{
         display: block;
     }
+
+    .contact-item h3{
+        font-size: 16px;
+    }
+
 /*---------------------------------------------------*/
     .title--portafolio{
         font-size:20px;
@@ -964,18 +976,6 @@ textarea:focus{
         margin:2px
     }
 
-    input{
-        font-size: 14px;
-        height:30px;
-        width: 80%;
-    }
-
-    textarea{
-        font-size: 14px;
-        height: 80px;
-        width: 90%;
-    }
-
     .title-contacto {
         font-size: 20px;
     }
@@ -1007,6 +1007,18 @@ textarea:focus{
 
     .portafolios-description p{
         font-size: 15px;
+    }
+
+    .contact-item h3{
+        font-size: 13px;
+    }
+
+    .contact-item{
+        padding: 15px;
+    }
+
+    .a-contact{
+        padding: 5px;
     }
 }
 
